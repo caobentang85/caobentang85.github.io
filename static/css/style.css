@@ -1,0 +1,266 @@
+/**
+* Theme Name:     FISDOM GLOSSARY
+* Author:         Rohan T George
+* Template:       twentytwentythree
+* Text Domain:	   twenty-twenty-three-child
+* Description:    Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+*/
+
+@import url("css2-Interwght100200300400500600700800900_swap.css");
+
+/******************************/
+body {
+  overflow-x: hidden;
+}
+
+#header,
+#footer {
+  display: none;
+}
+
+nav {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+p,
+#cat_grid li a,
+#glossary ul li a,
+.single-post ul li,
+.single-post ol li {
+  color: #344054;
+  font-size: 16px;
+  outline: none;
+  text-decoration: none;
+  margin-bottom: 1rem !important;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer ul li a {
+  font-size: 13px;
+  color: #fff !important;
+  outline: none;
+  text-decoration: none !important;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer div.grid p {
+  font-size: 13px;
+}
+
+.is-form-id-10 {
+  position: relative;
+  border-radius: 50px;
+  width: 100%;
+}
+
+#is-search-input-10 {
+  border-radius: 50px;
+  width: 100%;
+  padding: 20px 50px !important;
+}
+.single-post #is-search-input-10 {
+  padding: 30px 50px !important;
+}
+.home #is-search-input-10 {
+  border: 1px solid #ddd !important;
+  padding: 30px 50px !important;
+}
+body.template-alphabetical-posts #is-search-input-10 {
+  border: none;
+  padding: 20px 50px !important;
+}
+
+.border_none_search #is-search-input-10 {
+  border: 0 !important;
+  padding: 20px 50px !important;
+}
+
+.is-form-style.is-form-style-3 label {
+  width: 100% !important;
+}
+
+.is-search-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px !important;
+  height: 100% !important;
+}
+
+.is-search-icon {
+  background: transparent;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  padding: 0 !important;
+  margin: 0;
+  height: 100%;
+  width: 50px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-search-icon svg {
+  stroke: darkgray;
+}
+
+.ul-columns-4 {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+
+.sidebar ul li a {
+  display: block;
+  position: relative;
+}
+
+.sidebar ul li a:after {
+  content: url("https://www.fisdom.com/glossary/wp-content/uploads/sites/2/2023/02/right-arrow.svg");
+  position: absolute;
+  height: 100%;
+  right: 10px;
+  top: 0;
+}
+
+hr {
+  background: #c2c2c2;
+  border: 0 !important;
+  height: 1px !important;
+}
+
+#is-search-input-10 {
+  border: 0 !important;
+}
+
+#featured_posts {
+  position: relative;
+}
+
+#featured_posts:before {
+  content: url("https://www.fisdom.com/glossary/wp-content/uploads/sites/2/2023/02/dotted_bg.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#featured_posts .featured_post {
+  z-index: 1;
+}
+
+#featured_posts span,
+#featured_posts p {
+  color: #344054;
+}
+
+.single-post h2 {
+  font-size: 1.6rem !important;
+  margin-top: 1rem;
+}
+
+#bottom_glossary div::-webkit-scrollbar {
+  display: none;
+}
+
+#bottom_glossary div a {
+  font-size: 1.6rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+@media only screen and (min-width: 981px) {
+  h1,
+  h2 {
+    font-size: 52px !important;
+    line-height: 58px !important;
+  }
+
+  #download_app {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  #download_app .download_left_side {
+    padding-right: 4rem;
+  }
+
+  #download_app h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  #download_app a {
+    width: 250px;
+  }
+
+  #cat_grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    gap: 0px;
+    height: 160px;
+    overflow: hidden;
+  }
+
+  #cat_grid a {
+    display: block;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #download_app > div > img {
+    margin-left: auto;
+  }
+
+  #hero::before {
+    content: url("../image/hero-before-lg.svg");
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hero::before {
+    content: url("../image/hero-before.svg");
+  }
+  .ul-columns-4 {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  #cat_grid a {
+    display: block;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  div#featured_posts {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    margin-bottom: 3rem;
+  }
+
+  #cat_grid li {
+    display: none;
+  }
+
+  #cat_grid li:nth-child(1),
+  #cat_grid li:nth-child(2),
+  #cat_grid li:nth-child(3),
+  #cat_grid li:nth-child(4),
+  #cat_grid li:nth-child(5),
+  #cat_grid li:nth-child(6),
+  #cat_grid li:nth-child(7),
+  #cat_grid li:nth-child(8) {
+    display: block;
+  }
+}
